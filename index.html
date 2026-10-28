@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sergio Blázquez | Portfolio</title>
+    <title>Sergio Blázquez Segovia | Portfolio</title>
     <!-- Fuentes de Google -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Iconos de FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <style>
         /* Variables de color - Tema Oscuro (Estilo GitHub Dark / Data Tech) */
         :root {
@@ -202,6 +202,25 @@
             color: #8b949e;
         }
 
+        .project-image-link {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .project-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background-color: #ffffff;
+            transition: border-color 0.2s ease;
+        }
+
+        .project-image-link:hover .project-image {
+            border-color: var(--accent-color);
+        }
+
         /* Educación */
         .timeline-item {
             margin-bottom: 20px;
@@ -240,17 +259,17 @@
 <body>
 
     <div class="container">
-        
+
         <!-- CABECERA -->
         <header>
-             <img src="https://github.com/quince-byte/Portafolio/blob/b4d560c4f6a35a0d119f1cd55bc424087de1a36c/1679662323745.jpeg?raw=true" alt="Foto de Sergio Blázquez" class="profile-img">
+             <img src="https://github.com/quince-byte/Portafolio/blob/b4d560c4f6a35a0d119f1cd55bc424087de1a36c/1679662323745.jpeg?raw=true" alt="Foto de Sergio Blázquez Segovia" class="profile-img">
             <h1>Sergio Blázquez Segovia</h1>
             <h2>Junior Data Engineer | Python Developer</h2>
             <p>Transformando la complejidad del mundo en datos estructurados y conocimiento útil.</p>
-            
+
             <div class="contact-links">
                 <a href="mailto:setibs@gmail.com"><i class="fas fa-envelope"></i> setibs@gmail.com</a>
-                <a href="https://linkedin.com/in/sergio-blazquez" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://www.linkedin.com/in/sergio-bl%C3%A1zquez-segovia/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
                 <a href="https://github.com/Setibs" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                 <span><i class="fas fa-map-marker-alt"></i> Madrid, Spain</span>
             </div>
@@ -260,9 +279,7 @@
         <section>
             <h2 class="section-title"><i class="fas fa-user-astronaut"></i> Sobre Mí</h2>
             <p class="about-text">
-                Mi camino hacia la tecnología parte de un trasfondo científico en <strong>Física y Filosofía</strong>. Esto me ha dotado de una base analítica y matemática inquebrantable (Cálculo, Estadística), así como de un pensamiento lógico y crítico. 
-                <br><br>
-                Actualmente aplico esta perspectiva estructurada al desarrollo de software y la ingeniería de datos. Me apasiona construir <strong>pipelines ETL robustos</strong>, descubrir <i>insights</i> ocultos en datos crudos y aplicar principios de Clean Code y Arquitectura de Software. Mi objetivo es diseñar infraestructuras de datos escalables que faciliten la toma de decisiones.
+                Mi camino hacia la tecnología parte de un trasfondo científico en <strong>Física y Filosofía</strong>. Esto me ha dotado de una base analítica y matemática inquebrantable (Cálculo, Estadística), así como de un pensamiento lógico y crítico.<br><br>Actualmente aplico esta perspectiva estructurada al desarrollo de software y la ingeniería de datos. Me apasiona construir <strong>pipelines ETL robustos</strong>, descubrir <em>insights</em> ocultos en datos crudos y aplicar principios de Clean Code y Arquitectura de Software. Mi objetivo es diseñar infraestructuras de datos escalables que faciliten la toma de decisiones.<br>
             </p>
         </section>
 
@@ -270,46 +287,70 @@
         <section>
             <h2 class="section-title"><i class="fas fa-code"></i> Tech Stack & Habilidades</h2>
             <div class="skills-container">
+
                 <div class="skill-category">
                     <strong>Data Engineering</strong>
                     <div class="tags">
+
                         <span class="tag">Python (Advanced)</span>
+
                         <span class="tag">Pandas / NumPy</span>
+
                         <span class="tag">SQL (MySQL, PostgreSQL)</span>
+
                         <span class="tag">ETL Pipelines</span>
+
                         <span class="tag">Data Cleaning</span>
-                        <span class="tag">Spacy</span>
+
+                        <span class="tag">spaCy</span>
+
                     </div>
                 </div>
+
                 <div class="skill-category">
-                    <strong>Backend & Software Development</strong>
+                    <strong>Backend &amp; Software Development</strong>
                     <div class="tags">
+
                         <span class="tag">Django</span>
+
                         <span class="tag">API REST</span>
+
                         <span class="tag">PySide (Qt)</span>
+
                         <span class="tag">Java</span>
+
                         <span class="tag">OOP / SOLID</span>
+
                     </div>
                 </div>
+
                 <div class="skill-category">
-                    <strong>Herramientas, DevOps & Visualización</strong>
+                    <strong>Herramientas, DevOps &amp; Visualización</strong>
                     <div class="tags">
+
                         <span class="tag">Docker</span>
+
                         <span class="tag">Git / GitHub Actions (CI/CD)</span>
+
                         <span class="tag">Linux / Bash</span>
-                        <span class="tag">PowerBI</span>
+
+                        <span class="tag">Power BI</span>
+
                         <span class="tag">ECharts</span>
+
                         <span class="tag">Redis</span>
+
                     </div>
                 </div>
+
             </div>
         </section>
 
         <!-- PROYECTOS -->
         <section>
             <h2 class="section-title"><i class="fas fa-folder-open"></i> Proyectos Destacados</h2>
-            
-            <!-- Proyecto 1 -->
+
+            <!-- Proyecto 1: Whatstats -->
             <div class="project-card">
                 <div class="project-header">
                     <div>
@@ -318,32 +359,42 @@
                     </div>
                     <span class="project-year">2024</span>
                 </div>
-                <p>Desarrollo de una aplicación web <i>end-to-end</i> que permite procesar archivos de registro de chat no estructurados y convertirlos en métricas claras.</p>
+                <p>Desarrollo de una aplicación web <em>end-to-end</em> que permite procesar archivos de registro de chat no estructurados y convertirlos en métricas claras.</p>
                 <ul>
-                    <li>Desarrollo de un <strong>pipeline ETL completo</strong> usando Python (Pandas/NumPy) para transformar datos crudos.</li>
-                    <li>Creación de un backend escalable y seguro con <strong>Django</strong>.</li>
-                    <li>Implementación de dashboards interactivos en el frontend con <strong>ECharts</strong> y JavaScript.</li>
-                    <li>Despliegue en un VPS configurando <strong>Docker</strong> (Nginx, PostgreSQL, Redis, Django) y CI/CD usando GitHub Actions.</li>
+
+                    <li>Desarrollo de un <strong>pipeline ETL</strong> completo para la ingesta, parseo y análisis de historiales de chat no estructurados en formato texto.</li>
+
+                    <li>Creación de servicios backend en <strong>Django</strong> con transformaciones de datos vectorizadas en <strong>Pandas/NumPy</strong>, optimizando los tiempos de cómputo.</li>
+
+                    <li>Implementación de dashboards interactivos de métricas y visualización de datos con <strong>ECharts</strong> y JavaScript.</li>
+
+                    <li>Contenerización y despliegue del entorno completo (<strong>Docker, Nginx, PostgreSQL, Redis</strong>) en un VPS Linux con integración continua (<strong>CI/CD</strong>) mediante <strong>GitHub Actions</strong>.</li>
+
                 </ul>
             </div>
 
-            <!-- Proyecto 2 -->
+            <!-- Proyecto 2: SASDABA (desde experience) -->
             <div class="project-card">
                 <div class="project-header">
                     <div>
                         <h3 class="project-title">SASDABA Project <a href="https://sdc.cab.inta-csic.es/sasdaba/" target="_blank" style="font-size: 1rem; margin-left:10px;"><i class="fas fa-external-link-alt"></i></a></h3>
-                        <span class="project-role">Investigador Colaborador | CSIC & INTA</span>
+                        <span class="project-role">Investigador Colaborador | CSIC &amp; INTA</span>
                     </div>
                     <span class="project-year">2021 – 2023</span>
                 </div>
                 <p>Contribución a una base de datos científica con más de 2.000 estrellas brillantes para investigación astrofísica.</p>
                 <ul>
-                    <li>Recopilación de datos masivos mediante espectroscopía estelar.</li>
-                    <li>Procesamiento de <i>raw data</i> garantizando la calidad y el rigor necesarios para su posterior uso científico.</li>
+
+                    <li>Contribución al desarrollo y mantenimiento de una base de datos científica con más de 2.000 estrellas brillantes (V &lt; 5).</li>
+
+                    <li>Extracción, ingesta y procesamiento de datos brutos procedentes de observaciones por espectroscopía estelar.</li>
+
+                    <li>Aplicación de rigurosos controles de calidad y validación de datos para garantizar su reproducibilidad científica.</li>
+
                 </ul>
             </div>
 
-            <!-- Proyecto 3 -->
+            <!-- Proyecto 3: Domótica -->
             <div class="project-card">
                 <div class="project-header">
                     <div>
@@ -354,8 +405,37 @@
                 </div>
                 <p>Aplicación de escritorio para el control en tiempo real de dispositivos IoT del hogar (Aire Acondicionado y Garaje).</p>
                 <ul>
-                    <li>Ingeniería de la interfaz gráfica desarrollada con <strong>PySide (Qt)</strong>.</li>
-                    <li>Integración con sensores de hardware y optimización mediante arquitectura orientada a eventos.</li>
+
+                    <li>Diseño de una aplicación de escritorio con interfaz gráfica en <strong>PySide (Qt)</strong> para la monitorización y control en tiempo real de actuadores IoT (climatización y accesos).</li>
+
+                    <li>Integración de sensores de hardware y procesamiento concurrente mediante una arquitectura orientada a eventos.</li>
+
+                </ul>
+            </div>
+
+            <!-- Proyecto 4: HotelApp -->
+            <div class="project-card">
+                <div class="project-header">
+                    <div>
+                        <h3 class="project-title">HotelApp — Sistema de Reservas</h3>
+                        <span class="project-role">Java Developer | Desktop App (JavaFX + XML)</span>
+                    </div>
+                    <span class="project-year">2026</span>
+                </div>
+                <a class="project-image-link" href="https://github.com/quince-byte/Portafolio/blob/main/busqueda_101_ocupada.png" target="_blank" title="Ampliar captura de HotelApp">
+                    <img src="https://raw.githubusercontent.com/quince-byte/Portafolio/main/busqueda_101_ocupada.png" alt="Captura de HotelApp mostrando la búsqueda de la habitación 101 y su estado ocupado" class="project-image">
+                </a>
+                <p>Aplicación de escritorio para la consulta y gestión de reservas de un hotel, desarrollada con JavaFX y FXML bajo una arquitectura MVC.</p>
+                <ul>
+
+                    <li>Desarrollo de la interfaz con <strong>JavaFX y FXML</strong>, incluyendo una <strong>TableView</strong> con columnas tipadas y un buscador de habitaciones por número.</li>
+
+                    <li>Implementación de la capa de acceso a datos mediante el parseo <strong>DOM de XML</strong>, cargando las 30 habitaciones del hotel y mapeándolas a un modelo de dominio.</li>
+
+                    <li>Gestión de estados (disponible, ocupada, mantenimiento), validación de entradas y feedback contextual al usuario, incluyendo el tratamiento de habitaciones inexistentes.</li>
+
+                    <li>Proyecto gestionado con <strong>Maven</strong> sobre <strong>Java 21</strong>, aplicando separación de responsabilidades entre vista, controlador y modelo.</li>
+
                 </ul>
             </div>
         </section>
@@ -363,30 +443,35 @@
         <!-- EDUCACIÓN -->
         <section>
             <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Educación</h2>
-            
+
+
             <div class="timeline-item">
-                <h3>Técnico Superior en Desarrollo Multiplataforma (DAM)</h3>
-                <p>ThePower (FP Oficial) / IES | Enfoque: Arquitectura & Clean Code | 2025 - 2027</p>
+                <h3>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
+                <p>ThePower (FP Oficial) / IES | Especialización: Arquitectura de Software y Código Limpio | 2025 -- 2027 (En curso)</p>
             </div>
+
 
             <div class="timeline-item">
                 <h3>Máster en Análisis de Datos e Inteligencia Artificial</h3>
-                <p>ThePower Business School | Enfoque: Big Data & ML | 2025 - 2027</p>
+                <p>ThePower Business School | Especialización: Big Data y Machine Learning | 2025 -- 2027 (En curso)</p>
             </div>
 
-            <div class="timeline-item">
-                <h3>Certificación: Python Specialist Technician</h3>
-                <p>AEPI | Septiembre 2023</p>
-            </div>
 
             <div class="timeline-item">
-                <h3>Estudios Universitarios en Física</h3>
-                <p>UNED | Cálculo, Álgebra y Física Computacional | 2022 - 2024</p>
+                <h3>Estudios de Grado en Física (Formación Parcial)</h3>
+                <p>Universidad Nacional de Educación a Distancia (UNED) | Cálculo, Álgebra Lineal y Física Computacional | 2022 -- 2024</p>
             </div>
 
+
             <div class="timeline-item">
-                <h3>Estudios Universitarios en Filosofía</h3>
-                <p>UCM | Lógica y Pensamiento Crítico | 2022 - 2023</p>
+                <h3>Estudios de Grado en Filosofía (Formación Parcial)</h3>
+                <p>Universidad Complutense de Madrid (UCM) | Lógica Formal, Filosofía de la Ciencia y Pensamiento Crítico | 2022 -- 2023</p>
+            </div>
+
+
+            <div class="timeline-item">
+                <h3>Certificación: Técnico Especialista en Python</h3>
+                <p>AEPI (Expedida en Sep 2023)</p>
             </div>
         </section>
 
